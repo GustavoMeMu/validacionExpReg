@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/public/imagenes/descarga.jpg');
+    background-image: url('../imagenes/descarga.jpg');
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
