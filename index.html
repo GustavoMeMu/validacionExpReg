@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Coincidencias de Expresión Regular</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Contador de Coincidencias</h2>
+        <label for="regex">Expresión Regular:</label>
+        <input type="text" id="regex" placeholder="[0-9]">
+        <label for="text">Texto a Evaluar:</label>
+        <input type="text" id="text" placeholder="Ingresa el texto aquí">
+        <button class="button" onclick="contarCoincidencias()">Contar Coincidencias</button>
+        <div id="result" class="result"></div>
+        <div class="regex-suggestions">
+            <h3>Sugerencias de Expresiones Regulares</h3>
+            <ul>
+                
+                <li><strong>[0-9]</strong>: numeros</li>
+                <li><strong>[0-1]</strong>: solo 0 y 1</li>
+                <li><strong>[A-Za-z]</strong>: Solo letras</li>
+                <li><strong>^\w{8,20}$</strong>: Nombre de usuario alfanumérico de 8 a 20 caracteres</li>
+                <li><strong>[A-Za-z0-9]</strong>: Letras y numeros</li>
+                <li><strong>^L2211900\d{2}$</strong>: Usuario itma</li>
+                
+            </ul>
+        </div>
+    </div>
+    <script src="./public/js/script.min.js"></script>
+</body>
+
+</html>
